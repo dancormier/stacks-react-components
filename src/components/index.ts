@@ -3,6 +3,7 @@ import Anchors from './Anchors';
 import Avatar from './Avatar';
 import Badge from './Badge';
 import Banner from './Banner';
+import BlockLink from './BlockLink';
 import Breadcrumb from './Breadcrumb';
 import BreadcrumbLink from './BreadcrumbLink';
 import Breadcrumbs from './Breadcrumbs';
@@ -19,6 +20,7 @@ export {
   Avatar,
   Badge,
   Banner,
+  BlockLink,
   Breadcrumb,
   BreadcrumbLink,
   Breadcrumbs,

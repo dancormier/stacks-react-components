@@ -3,6 +3,7 @@ import { AnchorsProps } from './Anchors';
 import { AvatarProps } from './Avatar';
 import { BadgeProps } from './Badge';
 import { BannerProps } from './Banner';
+import { BlockLinkProps } from './BlockLink';
 import { BreadcrumbProps } from './Breadcrumb';
 import { BreadcrumbLinkProps } from './BreadcrumbLink';
 import { BreadcrumbsProps } from './Breadcrumbs';
@@ -19,6 +20,7 @@ export type {
   AvatarProps,
   BadgeProps,
   BannerProps,
+  BlockLinkProps,
   BreadcrumbProps,
   BreadcrumbLinkProps,
   BreadcrumbsProps,
