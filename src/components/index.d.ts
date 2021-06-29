@@ -10,6 +10,7 @@ import { BreadcrumbsProps } from './Breadcrumbs';
 import { ButtonProps } from './Button';
 import { ButtonGroupProps } from './ButtonGroup';
 import { ButtonGroupContainerProps } from './ButtonGroupContainer';
+import { IconProps } from './Icon';
 import { LinkProps } from './Link';
 import { SpinnerProps } from './Spinner';
 import { TagProps } from './Tag';
@@ -28,6 +29,7 @@ export type {
   ButtonProps,
   ButtonGroupProps,
   ButtonGroupContainerProps,
+  IconProps,
   LinkProps,
   SpinnerProps,
   TagProps,

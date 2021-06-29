@@ -10,6 +10,7 @@ import Breadcrumbs from './Breadcrumbs';
 import Button from './Button';
 import ButtonGroup from './ButtonGroup';
 import ButtonGroupContainer from './ButtonGroupContainer';
+import Icon from './Icon';
 import Link from './Link';
 import Spinner from './Spinner';
 import Tag from './Tag';
@@ -28,6 +29,7 @@ export {
   Button,
   ButtonGroup,
   ButtonGroupContainer,
+  Icon,
   Link,
   Spinner,
   Tag,

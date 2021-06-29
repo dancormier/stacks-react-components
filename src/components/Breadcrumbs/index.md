@@ -18,13 +18,13 @@ It is not appropriate to use Breadcrumbs when:
 ### Stack Overflow
 
 ```jsx padded
-import { Breadcrumb, BreadcrumbLink } from '../index';
+import { Breadcrumb, BreadcrumbLink, Icon } from '../index';
 import Icons from '@stackoverflow/stacks-icons';
 
 <Breadcrumbs>
   <Breadcrumb>
     <BreadcrumbLink href="#" aria-label="Stack Overflow">
-      <span dangerouslySetInnerHTML={{ __html: Icons.LogoGlyphXxs }} />
+      <Icon>{Icons.LogoGlyphXxs}</Icon>
     </BreadcrumbLink>
   </Breadcrumb>
   <Breadcrumb>
@@ -33,28 +33,29 @@ import Icons from '@stackoverflow/stacks-icons';
   <Breadcrumb showDivider={false}>
     <BreadcrumbLink href="#">Asking</BreadcrumbLink>
   </Breadcrumb>
-</Breadcrumbs>
+</Breadcrumbs>;
 ```
 
 ### Stack Exchange
 
 ```jsx padded
-import { Breadcrumb, BreadcrumbLink } from '../index';
+import { Breadcrumb, BreadcrumbLink, Icon } from '../index';
 import Icons from '@stackoverflow/stacks-icons';
 
 <Breadcrumbs>
   <Breadcrumb>
     <BreadcrumbLink href="#" aria-label="Stack Exchange">
-      <span dangerouslySetInnerHTML={{ __html: Icons.LogoSEXxs }} />
+      <Icon>{Icons.LogoSEXxs}</Icon>
     </BreadcrumbLink>
   </Breadcrumb>
   <Breadcrumb showDivider={false}>
     <BreadcrumbLink href="#">Review queues</BreadcrumbLink>
   </Breadcrumb>
-</Breadcrumbs>
+</Breadcrumbs>;
 ```
 
 ### Teams
+
 ```jsx padded
 import { Avatar, Breadcrumb, BreadcrumbLink } from '../index';
 import Icons from '@stackoverflow/stacks-icons';
@@ -72,5 +73,5 @@ import Icons from '@stackoverflow/stacks-icons';
   <Breadcrumb showDivider={false}>
     <BreadcrumbLink href="#">Billing</BreadcrumbLink>
   </Breadcrumb>
-</Breadcrumbs>
+</Breadcrumbs>;
 ```
