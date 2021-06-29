@@ -8,6 +8,7 @@ import Breadcrumbs from './Breadcrumbs';
 import Button from './Button';
 import ButtonGroup from './ButtonGroup';
 import ButtonGroupContainer from './ButtonGroupContainer';
+import Spinner from './Spinner';
 import View from './View';
 
 export {
@@ -21,5 +22,6 @@ export {
   Button,
   ButtonGroup,
   ButtonGroupContainer,
+  Spinner,
   View,
 };
