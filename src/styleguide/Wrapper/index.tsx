@@ -4,7 +4,7 @@ import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import htmlbars from 'react-syntax-highlighter/dist/esm/languages/hljs/htmlbars';
 import { atomOneLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import ReactToHTML from '../../components/ReactToHTML';
-import { Button } from '../../components/index';
+import { Button, View } from '../../components/index';
 import '@stackoverflow/stacks/dist/css/stacks.min.css';
 
 const Wrapper = ({ children }: { children: ReactNode }): ReactElement => {
@@ -17,7 +17,7 @@ const Wrapper = ({ children }: { children: ReactNode }): ReactElement => {
   return (
     <>
       {children}
-      <div className="mt24">
+      <View className="mt24">
         {showHTML ? (
           <>
             <SyntaxHighlighter
@@ -34,7 +34,7 @@ const Wrapper = ({ children }: { children: ReactNode }): ReactElement => {
             Show HTML
           </Button>
         )}
-      </div>
+      </View>
     </>
   );
 };

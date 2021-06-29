@@ -1,8 +1,8 @@
-import React, { ComponentType, ReactElement, ReactNode } from 'react';
+import React, { ReactElement, ReactNode } from 'react';
 
 export type ViewProps = {
   /** HTML Tag */
-  as?: ComponentType | keyof JSX.IntrinsicElements;
+  as?: string;
   /** Child elements */
   children?: ReactNode;
   /** Appended CSS classes */
