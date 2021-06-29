@@ -24,6 +24,14 @@ export type ButtonProps = ViewProps & {
     | 'github';
 };
 
+type ButtonBadgeProps = ViewProps;
+
+const ButtonBadge = ({ children }: ButtonBadgeProps) => (
+  <span className="s-btn--badge ml4">
+    <span className="s-btn--number">{children}</span>
+  </span>
+);
+
 /**
  *  Buttons are user interface elements which allows users to take actions throughout the project. It is important that they have ample click space and help communicate the importance of their actions.
  *
@@ -57,13 +65,7 @@ const Button = ({
     {...rest}
   >
     {children}
-    {badge ? (
-      <span className="s-btn--badge">
-        <span className="s-btn--number">{badge}</span>
-      </span>
-    ) : (
-      ''
-    )}
+    {badge ? <ButtonBadge>{badge}</ButtonBadge> : ''}
   </View>
 );
 

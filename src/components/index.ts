@@ -6,6 +6,8 @@ import Breadcrumb from './Breadcrumb';
 import BreadcrumbLink from './BreadcrumbLink';
 import Breadcrumbs from './Breadcrumbs';
 import Button from './Button';
+import ButtonGroup from './ButtonGroup';
+import ButtonGroupContainer from './ButtonGroupContainer';
 import View from './View';
 
 export {
@@ -17,5 +19,7 @@ export {
   BreadcrumbLink,
   Breadcrumbs,
   Button,
+  ButtonGroup,
+  ButtonGroupContainer,
   View,
 };

@@ -7,6 +7,8 @@ import { BreadcrumbLinkProps } from './BreadcrumbLink';
 import { BreadcrumbsProps } from './Breadcrumbs';
 import { ButtonProps } from './Button';
 import { ButtonGroupProps } from './ButtonGroup';
+import { ButtonGroupContainerProps } from './ButtonGroupContainer';
+import { ViewProps } from './View';
 
 export type {
   ActivityIndicatorProps,
@@ -17,5 +19,7 @@ export type {
   BreadcrumbLinkProps,
   BreadcrumbsProps,
   ButtonProps,
+  ButtonGroupProps,
+  ButtonGroupContainerProps,
   ViewProps,
 };
