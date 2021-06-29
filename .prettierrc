@@ -1,0 +1,7 @@
+{
+  "arrowParens": "avoid",
+  "filepath": "**/*.{js,ts,tsx,md}",
+  "printWidth": 80,
+  "singleQuote": true,
+  "trailingComma": "all"
+}
