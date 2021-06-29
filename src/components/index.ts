@@ -1,12 +1,12 @@
-import ActivityIndicator, { ActivityIndicatorProps } from "./ActivityIndicator";
-import Avatar, { AvatarProps } from "./Avatar";
-import Badge, { BadgeProps } from "./Badge";
-import Banner, { BannerProps } from "./Banner";
-import Breadcrumb, { BreadcrumbProps } from "./Breadcrumb";
-import BreadcrumbLink, { BreadcrumbLinkProps } from "./BreadcrumbLink";
-import Breadcrumbs, { BreadcrumbsProps } from "./Breadcrumbs";
-import Button, { ButtonProps } from "./Button";
-import View, { ViewProps } from "./View";
+import ActivityIndicator from './ActivityIndicator';
+import Avatar from './Avatar';
+import Badge from './Badge';
+import Banner from './Banner';
+import Breadcrumb from './Breadcrumb';
+import BreadcrumbLink from './BreadcrumbLink';
+import Breadcrumbs from './Breadcrumbs';
+import Button from './Button';
+import View from './View';
 
 export {
   ActivityIndicator,
@@ -18,16 +18,4 @@ export {
   Breadcrumbs,
   Button,
   View,
-};
-
-export type {
-  ActivityIndicatorProps,
-  AvatarProps,
-  BadgeProps,
-  BannerProps,
-  BreadcrumbProps,
-  BreadcrumbLinkProps,
-  BreadcrumbsProps,
-  ButtonProps,
-  ViewProps,
 };

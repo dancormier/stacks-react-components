@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
-import { View, ViewProps } from '..';
 // @ts-ignore
 import Icons from '@stackoverflow/stacks-icons';
+import View, { ViewProps } from '../View';
 
 export type BreadcrumbProps = ViewProps & {
   showDivider?: boolean;

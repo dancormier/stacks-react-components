@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { View, ViewProps } from '..';
+import View, { ViewProps } from '../View';
 
 export type BadgeProps = ViewProps & {
   /** Bling color */
