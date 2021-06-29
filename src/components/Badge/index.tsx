@@ -23,7 +23,7 @@ export type BadgeProps = ViewProps & {
 };
 
 /**
- *  Badges are labels used for flags, earned achievements, and number totals.
+ * Badges are labels used for flags, earned achievements, and number totals.
  */
 const Badge = ({
   as = 'span',

@@ -4,9 +4,9 @@ import View, { ViewProps } from '../View';
 export type BreadcrumbsProps = ViewProps;
 
 /**
- *  `Breadcrumbs` are used to provide context for the currently-viewed page.
+ * `Breadcrumbs` are used to provide context for the currently-viewed page.
  *
- *  See also [Breadcrumb](/#/Stacks/Breadcrumb) and [BreadcrumbLink](/#/Stacks/BreadcrumbLink).
+ * See also [Breadcrumb](/#/Stacks/Breadcrumb) and [BreadcrumbLink](/#/Stacks/BreadcrumbLink).
  */
 const Breadcrumbs = ({
   as = 'nav',

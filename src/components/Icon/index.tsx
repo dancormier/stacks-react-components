@@ -6,7 +6,7 @@ export type IconProps = ViewProps & {
 };
 
 /**
- *  Stacks provides a complete icon set, managed separately in the [Stacks-Icons](https://github.com/StackExchange/Stacks-Icons) repository. There you’ll find deeper documentation on the various uses as well as the icons’ source in our design tool Figma.
+ * Stacks provides a complete icon set, managed separately in the [Stacks-Icons](https://github.com/StackExchange/Stacks-Icons) repository. There you’ll find deeper documentation on the various uses as well as the icons’ source in our design tool Figma.
  */
 const Icon = ({ as, children, isNative, ...rest }: IconProps): ReactElement => {
   const [icon, setIcon] = React.useState(children);

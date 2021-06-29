@@ -13,7 +13,7 @@ export type AvatarProps = ViewProps & {
 };
 
 /**
- *  Avatars are used to quickly identify users or teams.
+ * Avatars are used to quickly identify users or teams.
  */
 const Avatar = ({
   alt,

@@ -8,7 +8,7 @@ export type BreadcrumbProps = ViewProps & {
 };
 
 /**
- *  `Breadcrumbs` are used to provide context for the currently-viewed page.
+ * `Breadcrumbs` are used to provide context for the currently-viewed page.
  *
  * See [Breadcrumbs](/#/Stacks/Breadcrumbs).
  */

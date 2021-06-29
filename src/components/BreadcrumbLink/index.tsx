@@ -6,9 +6,9 @@ export type BreadcrumbLinkProps = ViewProps & {
 };
 
 /**
- *  `BreadcrumbLinks` are link components for use withing `Breadcrumb`.
+ * `BreadcrumbLinks` are link components for use withing `Breadcrumb`.
  *
- *  See [Breadcrumbs](/#/Stacks/Breadcrumbs).
+ * See [Breadcrumbs](/#/Stacks/Breadcrumbs).
  */
 const BreadcrumbLink = ({
   as = 'a',

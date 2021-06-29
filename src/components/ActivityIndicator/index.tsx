@@ -7,12 +7,12 @@ export type ActivityIndicatorProps = ViewProps & {
 };
 
 /**
- *  Stacks provides a small jewel for indicating new activity.
+ * Stacks provides a small jewel for indicating new activity.
  *
  * @visibleName Activity Indicator
  */
 const ActivityIndicator = ({
-  className,
+  className = '',
   label = 'New activity', // TODO: Create convention for screen reader text
   ...rest
 }: ActivityIndicatorProps): ReactElement => (

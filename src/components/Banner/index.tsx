@@ -7,7 +7,7 @@ export type BannerProps = ViewProps & {
 };
 
 /**
- *  Banner description
+ * Banner description
  */
 const Banner = ({
   as = 'aside',
