@@ -4,30 +4,57 @@
 
 ```jsx padded
 <Tag href="#">Default</Tag>
+<Tag href="#" showDismiss>JavaScript</Tag>
+<Tag
+  href="#"
+  sponsor={{
+    src: "https://i.stack.imgur.com/tKsDb.png",
+    alt: "Google Android",
+    height: '18px',
+    width: '16px',
+  }}
+>
+  Android
+</Tag>
+<Tag className="is-selected" href="#" showDismiss>razor</Tag>
 ```
 
 ### Moderator
 
 ```jsx padded
-<Tag href="#" variant="moderator">
-  Moderator
-</Tag>
+<Tag href="#" variant="moderator">status-completed</Tag>
+<Tag href="#" variant="moderator" showDismiss>status-bydesign</Tag>
+<Tag href="#" variant="moderator">status-planned</Tag>
+<Tag className="is-selected" href="#" variant="moderator">status-deferred</Tag>
 ```
 
 ### Required
 
 ```jsx padded
-<Tag href="#" variant="required">
-  Required
-</Tag>
+<Tag href="#" variant="required">discussion</Tag>
+<Tag href="#" variant="required" showDismiss>feature-request</Tag>
+<Tag href="#" variant="required">bug</Tag>
+<Tag className="is-selected" href="#" variant="required">featured</Tag>
 ```
 
 ### Muted
 
 ```jsx padded
-<Tag href="#" variant="muted">
-  Muted
+<Tag href="#" variant="muted">asp-net</Tag>
+<Tag href="#" variant="muted" showDismiss>netscape</Tag>
+<Tag
+  href="#"
+  variant="muted"
+  sponsor={{
+    src: "https://i.stack.imgur.com/gfrSH.png",
+    alt: "SQL Server",
+    height: '18px',
+    width: '16px',
+  }}
+>
+  sql-server
 </Tag>
+<Tag className="is-selected" href="#" variant="muted">razor</Tag>
 ```
 
 ### Sizes

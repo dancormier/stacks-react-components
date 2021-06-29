@@ -1,8 +1,18 @@
 import React, { ReactElement } from 'react';
+// @ts-ignore
+import Icons from '@stackoverflow/stacks-icons';
+import Icon from '../Icon';
 import View, { ViewProps } from '../View';
 
 export type TagProps = ViewProps & {
   className?: 'is-selected' | string;
+  showDismiss?: boolean;
+  sponsor?: {
+    src: string;
+    alt: string;
+    height?: string;
+    width?: string;
+  };
   modifier?: 'dismiss' | 'sponsor';
   size?: 'xs' | 'sm' | 'md' | 'lg';
   variant?: 'moderator' | 'required' | 'muted';
@@ -16,6 +26,8 @@ const Tag = ({
   children,
   className = '',
   modifier,
+  showDismiss,
+  sponsor,
   size,
   variant,
   ...rest
@@ -31,7 +43,23 @@ const Tag = ({
     `}
     {...rest}
   >
+    {sponsor ? (
+      <View
+        as="img"
+        className="s-tag--sponsor"
+        // @ts-ignore
+        src={sponsor.src}
+        alt={sponsor.alt}
+        height={sponsor.height}
+        width={sponsor.width}
+      />
+    ) : null}
     {children}
+    {showDismiss ? (
+      <Icon as="span" className="s-tag--dismiss">
+        {Icons.ClearSm}
+      </Icon>
+    ) : null}
   </View>
 );
 
