@@ -12,6 +12,7 @@ import { ButtonGroupProps } from './ButtonGroup';
 import { ButtonGroupContainerProps } from './ButtonGroupContainer';
 import { LinkProps } from './Link';
 import { SpinnerProps } from './Spinner';
+import { TagProps } from './Tag';
 import { ViewProps } from './View';
 
 export type {
@@ -29,5 +30,6 @@ export type {
   ButtonGroupContainerProps,
   LinkProps,
   SpinnerProps,
+  TagProps,
   ViewProps,
 };

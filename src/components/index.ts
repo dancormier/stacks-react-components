@@ -12,6 +12,7 @@ import ButtonGroup from './ButtonGroup';
 import ButtonGroupContainer from './ButtonGroupContainer';
 import Link from './Link';
 import Spinner from './Spinner';
+import Tag from './Tag';
 import View from './View';
 
 export {
@@ -29,5 +30,6 @@ export {
   ButtonGroupContainer,
   Link,
   Spinner,
+  Tag,
   View,
 };
