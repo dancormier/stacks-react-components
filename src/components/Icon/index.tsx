@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import View, { ViewProps } from '../View';
 
 export type IconProps = ViewProps & {
+  /** Use native (colorful) icon */
   isNative?: boolean;
 };
 
