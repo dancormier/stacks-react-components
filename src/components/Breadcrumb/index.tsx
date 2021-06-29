@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react';
 // @ts-ignore
 import Icons from '@stackoverflow/stacks-icons';
+import Icon from '../Icon';
 import View, { ViewProps } from '../View';
 
 export type BreadcrumbProps = ViewProps & {
@@ -21,10 +22,7 @@ const Breadcrumb = ({
   <View className={`s-breadcrumbs--item ${className}`} {...rest}>
     {children}
     {showDivider && (
-      <span
-        className="s-breadcrumbs--divider"
-        dangerouslySetInnerHTML={{ __html: Icons.ArrowRightAltSm }}
-      />
+      <Icon className="s-breadcrumbs--divider">{Icons.ArrowRightAltSm}</Icon>
     )}
   </View>
 );

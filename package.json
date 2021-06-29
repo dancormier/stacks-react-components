@@ -15,10 +15,13 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-syntax-highlighter": "^13.5.1",
+    "html-format": "^1.0.1",
     "html-minifier-terser": "^5.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-syntax-highlighter": "^13.5.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
@@ -62,11 +65,9 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
-    "html-format": "^1.0.1",
     "prettier": "^2.2.1",
     "react-docgen-typescript": "^2.0.0",
     "react-styleguidist": "^11.1.7",
-    "react-syntax-highlighter": "^13.5.3",
     "webpack": "^4.44.2"
   }
 }

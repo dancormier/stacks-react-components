@@ -15,6 +15,7 @@ const Breadcrumbs = ({
   ...rest
 }: BreadcrumbsProps): ReactElement => (
   <View
+    as={as}
     className={`s-breadcrumbs ${className}`}
     aria-label="breadcrumb"
     {...rest}
