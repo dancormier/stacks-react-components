@@ -1,4 +1,5 @@
 import ActivityIndicator from './ActivityIndicator';
+import Anchors from './Anchors';
 import Avatar from './Avatar';
 import Badge from './Badge';
 import Banner from './Banner';
@@ -14,6 +15,7 @@ import View from './View';
 
 export {
   ActivityIndicator,
+  Anchors,
   Avatar,
   Badge,
   Banner,

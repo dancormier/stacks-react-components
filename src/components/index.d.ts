@@ -1,4 +1,5 @@
 import { ActivityIndicatorProps } from './ActivityIndicator';
+import { AnchorsProps } from './Anchors';
 import { AvatarProps } from './Avatar';
 import { BadgeProps } from './Badge';
 import { BannerProps } from './Banner';
@@ -14,6 +15,7 @@ import { ViewProps } from './View';
 
 export type {
   ActivityIndicatorProps,
+  AnchorsProps,
   AvatarProps,
   BadgeProps,
   BannerProps,
@@ -23,6 +25,7 @@ export type {
   ButtonProps,
   ButtonGroupProps,
   ButtonGroupContainerProps,
+  LinkProps,
   SpinnerProps,
   ViewProps,
 };
