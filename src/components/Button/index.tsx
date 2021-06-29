@@ -33,7 +33,7 @@ const ButtonBadge = ({ children }: ButtonBadgeProps) => (
 );
 
 /**
- *  Buttons are user interface elements which allows users to take actions throughout the project. It is important that they have ample click space and help communicate the importance of their actions.
+ * Buttons are user interface elements which allows users to take actions throughout the project. It is important that they have ample click space and help communicate the importance of their actions.
  *
  */
 const Button = ({
