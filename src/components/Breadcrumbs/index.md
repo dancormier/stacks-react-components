@@ -20,15 +20,15 @@ import { Breadcrumb, BreadcrumbLink, Icon } from '../index';
 import Icons from '@stackoverflow/stacks-icons';
 
 <Breadcrumbs>
-  <Breadcrumb>
+  <Breadcrumb hasDivider>
     <BreadcrumbLink href="#" aria-label="Stack Overflow">
       <Icon>{Icons.LogoGlyphXxs}</Icon>
     </BreadcrumbLink>
   </Breadcrumb>
-  <Breadcrumb>
+  <Breadcrumb hasDivider>
     <BreadcrumbLink href="#">Help center</BreadcrumbLink>
   </Breadcrumb>
-  <Breadcrumb showDivider={false}>
+  <Breadcrumb>
     <BreadcrumbLink href="#">Asking</BreadcrumbLink>
   </Breadcrumb>
 </Breadcrumbs>;

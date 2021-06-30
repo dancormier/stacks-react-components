@@ -5,7 +5,7 @@ import Icon from '../Icon';
 import View, { ViewProps } from '../View';
 
 export type BreadcrumbProps = ViewProps & {
-  showDivider?: boolean;
+  hasDivider?: boolean;
 };
 
 /**
@@ -16,12 +16,12 @@ export type BreadcrumbProps = ViewProps & {
 const Breadcrumb = ({
   className = '',
   children,
-  showDivider = true,
+  hasDivider,
   ...rest
 }: BreadcrumbProps): ReactElement => (
   <View className={`s-breadcrumbs--item ${className}`} {...rest}>
     {children}
-    {showDivider && (
+    {hasDivider && (
       <Icon className="s-breadcrumbs--divider">{Icons.ArrowRightAltSm}</Icon>
     )}
   </View>
