@@ -1,5 +1,3 @@
-See also [Breadcrumb](/#/Stacks/Breadcrumb) and [BreadcrumbLink](/#/Stacks/BreadcrumbLink).
-
 ## Examples
 
 Breadcrumbs show users where they are within a site’s hierarchy. Breadcrumbs help orient the user and allow for navigation to previous page levels. It can be appropriate to use a breadcrumb when:
