@@ -11,6 +11,7 @@ import { ButtonProps } from './Button';
 import { ButtonGroupProps } from './ButtonGroup';
 import { ButtonGroupContainerProps } from './ButtonGroupContainer';
 import { CardProps } from './Card';
+import { DatePickerProps } from './DatePicker';
 import { IconProps } from './Icon';
 import { LinkProps } from './Link';
 import { NavigationProps } from './Navigation';
@@ -34,6 +35,7 @@ export type {
   ButtonGroupProps,
   ButtonGroupContainerProps,
   CardProps,
+  DatePickerProps,
   IconProps,
   LinkProps,
   NavigationProps,

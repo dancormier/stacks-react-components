@@ -11,6 +11,7 @@ import Button from './Button';
 import ButtonGroup from './ButtonGroup';
 import ButtonGroupContainer from './ButtonGroupContainer';
 import Card from './Card';
+import DatePicker from './DatePicker';
 import Icon from './Icon';
 import Link from './Link';
 import Navigation from './Navigation';
@@ -34,6 +35,7 @@ export {
   ButtonGroup,
   ButtonGroupContainer,
   Card,
+  DatePicker,
   Icon,
   Link,
   Navigation,
