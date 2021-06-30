@@ -21,3 +21,75 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 1. **Import your desired component**
 
 With the magic of ES Modules, you can quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit.
+
+## Here's a bunch of crap!
+
+```jsx padded
+import {
+  Button,
+  Card,
+  Icon,
+  Navigation,
+  NavigationItem,
+  NavigationTitle,
+  Spinner,
+  Tag,
+  View,
+} from './index';
+import Icons from '@stackoverflow/stacks-icons';
+
+<View className="mn6 mtn16 mb0">
+  <Navigation className="bg-black-050 bb b1 bc-black-100 py8 px16">
+    <li>
+      <NavigationItem href="#" className="is-selected">
+        Home
+      </NavigationItem>
+    </li>
+    <li>
+      <NavigationItem href="#">Email</NavigationItem>
+    </li>
+    <li>
+      <NavigationItem href="#">Content</NavigationItem>
+    </li>
+    <li>
+      <NavigationItem href="#">Brand</NavigationItem>
+    </li>
+    <li>
+      <NavigationItem href="#">Marketing</NavigationItem>
+    </li>
+  </Navigation>
+  <View className="p12">
+    <Card className="bs-sm">
+      <h2 class="fs-body3 lh-sm fc-dark">Base card title</h2>
+      <p class="fs-body1 fc-medium">
+        This is a description of the card’s content.
+      </p>
+      <View className="mb16">
+        <Tag href="#" className="mr8">
+          React
+        </Tag>
+        <Tag href="#" className="mr8" variant="moderator">
+          status-in-progress
+        </Tag>
+        <Tag href="#" className="mr8" variant="required" hasDismiss>
+          feature-request
+        </Tag>
+        <Tag className="is-selected mr8" href="#" variant="muted">
+          razor
+        </Tag>
+      </View>
+      <View as="p" className="grid gsx gs4">
+        <Button variant="primary" size="sm" className="grid--cell">
+          Call to action
+        </Button>
+        <Button size="sm" className="grid--cell">
+          Cancel
+        </Button>
+      </View>
+    </Card>
+  </View>
+  <View className="p16">
+    <Spinner size="lg" />
+  </View>
+</View>;
+```
