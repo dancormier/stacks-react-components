@@ -6,7 +6,8 @@ import View, { ViewProps } from '../View';
 
 export type TagProps = ViewProps & {
   className?: 'is-selected' | string;
-  showDismiss?: boolean;
+  // TODO: Think of better name
+  hasDismiss?: boolean;
   sponsor?: {
     src: string;
     alt: string;
@@ -26,7 +27,7 @@ const Tag = ({
   children,
   className = '',
   modifier,
-  showDismiss,
+  hasDismiss,
   sponsor,
   size,
   variant,
@@ -55,7 +56,7 @@ const Tag = ({
       />
     ) : null}
     {children}
-    {showDismiss ? (
+    {hasDismiss ? (
       <Icon as="span" className="s-tag--dismiss">
         {Icons.ClearSm}
       </Icon>
