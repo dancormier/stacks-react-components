@@ -2,7 +2,7 @@ import React, { ReactElement, ReactNode } from 'react';
 
 export type ViewProps = {
   /** HTML Tag */
-  as?: string;
+  as?: keyof JSX.IntrinsicElements;
   /** Child elements */
   children?: ReactNode;
   /** Appended CSS classes */
@@ -15,7 +15,6 @@ const View = ({
   className = '',
   ...rest
 }: ViewProps): ReactElement => (
-  // @ts-ignore
   <Wrapper className={className} {...rest}>
     {children}
   </Wrapper>
