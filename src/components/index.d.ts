@@ -13,6 +13,9 @@ import { ButtonGroupContainerProps } from './ButtonGroupContainer';
 import { CardProps } from './Card';
 import { IconProps } from './Icon';
 import { LinkProps } from './Link';
+import { NavigationProps } from './Navigation';
+import { NavigationItemProps } from './NavigationItem';
+import { NavigationTitleProps } from './NavigationTitle';
 import { SpinnerProps } from './Spinner';
 import { TagProps } from './Tag';
 import { ViewProps } from './View';
@@ -33,6 +36,9 @@ export type {
   CardProps,
   IconProps,
   LinkProps,
+  NavigationProps,
+  NavigationItemProps,
+  NavigationTitleProps,
   SpinnerProps,
   TagProps,
   ViewProps,

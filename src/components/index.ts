@@ -13,6 +13,9 @@ import ButtonGroupContainer from './ButtonGroupContainer';
 import Card from './Card';
 import Icon from './Icon';
 import Link from './Link';
+import Navigation from './Navigation';
+import NavigationItem from './NavigationItem';
+import NavigationTitle from './NavigationTitle';
 import Spinner from './Spinner';
 import Tag from './Tag';
 import View from './View';
@@ -33,6 +36,9 @@ export {
   Card,
   Icon,
   Link,
+  Navigation,
+  NavigationItem,
+  NavigationTitle,
   Spinner,
   Tag,
   View,
