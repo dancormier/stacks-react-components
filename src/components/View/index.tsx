@@ -15,6 +15,7 @@ const View = ({
   className = '',
   ...rest
 }: ViewProps): ReactElement => (
+  // @ts-ignore
   <Wrapper className={className} {...rest}>
     {children}
   </Wrapper>

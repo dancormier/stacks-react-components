@@ -27,9 +27,11 @@ export type ButtonProps = ViewProps & {
 type ButtonBadgeProps = ViewProps;
 
 const ButtonBadge = ({ children }: ButtonBadgeProps) => (
-  <span className="s-btn--badge ml4">
-    <span className="s-btn--number">{children}</span>
-  </span>
+  <View as="span" className="s-btn--badge ml4">
+    <View as="span" className="s-btn--number">
+      {children}
+    </View>
+  </View>
 );
 
 /**
@@ -60,6 +62,7 @@ const Button = ({
       ${hasIcon ? 's-btn__icon' : ''}
       ${className}
     `}
+    // @ts-ignore
     onClick={onClick}
     type={as === 'button' ? 'button' : ''}
     {...rest}

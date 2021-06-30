@@ -20,6 +20,7 @@ const BreadcrumbLink = ({
   <View
     as={as}
     className={`s-breadcrumbs--link ${className}`}
+    // @ts-ignore
     href={(as === 'a' && href) || ''}
     {...rest}
   >
