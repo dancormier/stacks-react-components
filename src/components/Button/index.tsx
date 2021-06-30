@@ -8,7 +8,6 @@ export type ButtonProps = ViewProps & {
   hasIcon?: boolean;
   /** Type of badge which sets color scheme */
   modifier?: 'clear' | 'outlined' | 'filled';
-  onClick: () => void;
   /** Button size */
   size?: 'xs' | 'sm' | 'md';
   /** Type of badge which sets color scheme */
@@ -46,7 +45,6 @@ const Button = ({
   modifier,
   hasDropdown,
   hasIcon,
-  onClick,
   size,
   variant = 'secondary',
   ...rest
@@ -63,7 +61,6 @@ const Button = ({
       ${className}
     `}
     // @ts-ignore
-    onClick={onClick}
     type={as === 'button' ? 'button' : ''}
     {...rest}
   >
