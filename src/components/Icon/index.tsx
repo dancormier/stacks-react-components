@@ -3,7 +3,7 @@ import View, { ViewProps } from '../View';
 
 export type IconProps = ViewProps & {
   /** Use native (colorful) icon */
-  isNative?: boolean;
+  native?: boolean;
 };
 
 /**
@@ -12,17 +12,17 @@ export type IconProps = ViewProps & {
 const Icon = ({
   as = 'span',
   children,
-  isNative,
+  native,
   ...rest
 }: IconProps): ReactElement => {
   const [icon, setIcon] = React.useState(children);
 
   React.useEffect(() => {
-    if (isNative) {
+    if (native) {
       // @ts-ignore
       setIcon(children.replaceAll('svg-icon ', 'svg-icon native '));
     }
-  }, [children, isNative]);
+  }, [children, native]);
 
   // @ts-ignore
   return <View as={as} dangerouslySetInnerHTML={{ __html: icon }} {...rest} />;

@@ -17,11 +17,11 @@ import Icons from '@stackoverflow/stacks-icons';
   </View>
   <View className="flex--item">
     <div className="fc-medium mb12">With native colors</div>
-    <Icon isNative>{Icons.Logo}</Icon>
+    <Icon native>{Icons.Logo}</Icon>
   </View>
   <View className="flex--item">
     <div className="fc-medium mb12">With arbitrary classes</div>
     <Icon>{Icons.Logo}</Icon>
   </View>
-</View>
+</View>;
 ```
