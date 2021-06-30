@@ -1,5 +1,3 @@
-# Using Stacks React Components
-
 Use these components in your React app, cowboy! Yee-haw!
 
 ## Goals
