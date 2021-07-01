@@ -29,7 +29,7 @@ const Wrapper = ({ children }: { children: ReactNode }): ReactElement => {
               style={atomOneLight}
             >
               {/* @ts-ignore */}
-              {formatHTML(ReactToHTML(children), ' '.repeat(4), 120)}
+              {formatHTML(ReactToHTML(children), ' '.repeat(4), 80)}
             </SyntaxHighlighter>
           </>
         ) : null}
