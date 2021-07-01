@@ -11,7 +11,7 @@ module.exports = {
       content: 'src/components/index.md',
       components: 'src/components/*/*.tsx',
       exampleMode: 'expand',
-      usageMode: 'collapse',
+      usageMode: 'expand',
       sectionDepth: 2,
     },
   ],
@@ -46,7 +46,17 @@ module.exports = {
         },
       },
       Table: {
+        tableHead: {
+          backgroundColor: 'var(--black-050)',
+        },
+        cellHeading: {
+          padding: '8px',
+          border: '1px solid var(--black-100)',
+        },
         cell: {
+          border: '1px solid var(--black-100)',
+          padding: '8px',
+
           '&:last-child': {
             minWidth: '50%',
             width: 'auto',
