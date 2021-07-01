@@ -21,3 +21,25 @@ const View = ({
 );
 
 export default View;
+
+// TODO: Consider a better type like so...
+// export type ViewProps<
+//   TElement extends keyof JSX.IntrinsicElements,
+//   TComponentProps
+// > = {
+//   /** HTML Tag */
+//   as?: TElement;
+// } & JSX.IntrinsicElements[TElement] &
+//   TComponentProps &
+//   React.RefAttributes<any>;
+
+// const View: React.FC = ({
+//   as: tagName = 'div',
+//   ...rest
+// }: ViewProps<any, any>): ReactElement => {
+//   const TagName = tagName as keyof JSX.IntrinsicElements;
+
+//   return <TagName {...rest} />;
+// };
+
+// export default View

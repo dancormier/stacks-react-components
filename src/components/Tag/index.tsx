@@ -5,15 +5,13 @@ import View, { ViewProps } from '../View';
 
 export type TagProps = ViewProps & {
   className?: 'is-selected' | string;
-  // TODO: Think of better name
-  hasDismiss?: boolean;
+  dismissable?: boolean;
   sponsor?: {
     src: string;
     alt: string;
     height?: string;
     width?: string;
   };
-  modifier?: 'dismiss' | 'sponsor';
   size?: 'xs' | 'sm' | 'md' | 'lg';
   variant?: 'moderator' | 'required' | 'muted';
 };
@@ -21,12 +19,11 @@ export type TagProps = ViewProps & {
 /**
  * Tags are an interactive, community-generated keyword that allow communities to label, organize, and discover related content. Tags are maintained by their respective communities
  */
-const Tag = ({
+const Tag: React.FC = ({
   as = 'a',
   children,
   className = '',
-  modifier,
-  hasDismiss,
+  dismissable,
   sponsor,
   size,
   variant,
@@ -37,17 +34,14 @@ const Tag = ({
     className={`
       s-tag
       ${variant ? `s-tag__${variant}` : ''}
-      ${modifier ? `s-tag__${modifier}` : ''}
       ${size ? `s-tag__${size}` : ''}
       ${className}
     `}
     {...rest}
   >
     {sponsor ? (
-      <View
-        as="img"
+      <img
         className="s-tag--sponsor"
-        // @ts-ignore
         src={sponsor.src}
         alt={sponsor.alt}
         height={sponsor.height}
@@ -55,10 +49,8 @@ const Tag = ({
       />
     ) : null}
     {children}
-    {hasDismiss ? (
-      <Icon as="span" className="s-tag--dismiss">
-        {Icons.ClearSm}
-      </Icon>
+    {dismissable ? (
+      <Icon className="s-tag--dismiss">{Icons.ClearSm}</Icon>
     ) : null}
   </View>
 );

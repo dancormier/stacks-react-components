@@ -17,7 +17,7 @@ const ActivityIndicator = ({
   ...rest
 }: ActivityIndicatorProps): ReactElement => (
   <View className={`s-activity-indicator ${className}`} {...rest}>
-    {label && <div className="v-visible-sr">{label}</div>}
+    {label ? <div className="v-visible-sr">{label}</div> : null}
   </View>
 );
 
