@@ -22,9 +22,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
 With the magic of ES Modules, you can quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit.
 
-## Here's a bunch of crap!
+## Demo time!
 
 ```jsx padded
+import React from 'react';
 import {
   Button,
   Card,
@@ -38,45 +39,62 @@ import {
 } from './index';
 import Icons from '@stackoverflow/stacks-icons';
 
-<View className="mn6 mtn16 mb0">
-  <Navigation className="bg-black-050 bb b1 bc-black-100 py8 px16">
+const navItems = ['Home', 'Email', 'Content', 'Brand', 'Marketing'];
+const tags = [
+  {
+    href: '#',
+    children: 'React',
+  },
+  {
+    href: '#',
+    variant: 'moderator',
+    children: 'status-in-progress',
+  },
+  {
+    href: '#',
+    variant: 'required',
+    hasDismiss: true,
+    children: 'feature-request',
+  },
+  {
+    href: '#',
+    variant: 'muted',
+    children: 'razor',
+    className: 'is-selected',
+  },
+];
+
+const CustomNav = ({ items, selectedIndex }) => {
+  const [selected, setSelected] = React.useState(selectedIndex);
+
+  return items.map((item, i) => (
     <li>
-      <NavigationItem href="#" className="is-selected">
-        Home
+      <NavigationItem
+        key={item}
+        as="button"
+        className={item === items[selected] ? 'is-selected' : ''}
+        onClick={() => setSelected(i)}
+      >
+        {item}
       </NavigationItem>
     </li>
-    <li>
-      <NavigationItem href="#">Email</NavigationItem>
-    </li>
-    <li>
-      <NavigationItem href="#">Content</NavigationItem>
-    </li>
-    <li>
-      <NavigationItem href="#">Brand</NavigationItem>
-    </li>
-    <li>
-      <NavigationItem href="#">Marketing</NavigationItem>
-    </li>
+  ));
+};
+
+<View className="mn6 mtn16 mb0">
+  <Navigation className="bg-black-050 bb b1 bc-black-100 py8 px16">
+    <CustomNav items={navItems} selectedIndex={0} />
   </Navigation>
   <View className="p12">
     <Card className="bs-sm">
-      <h2 class="fs-body3 lh-sm fc-dark">Base card title</h2>
-      <p class="fs-body1 fc-medium">
+      <h2 className="fs-body3 lh-sm fc-dark">Base card title</h2>
+      <p className="fs-body1 fc-medium">
         This is a description of the card’s content.
       </p>
       <View className="mb16">
-        <Tag href="#" className="mr8">
-          React
-        </Tag>
-        <Tag href="#" className="mr8" variant="moderator">
-          status-in-progress
-        </Tag>
-        <Tag href="#" className="mr8" variant="required" hasDismiss>
-          feature-request
-        </Tag>
-        <Tag className="is-selected mr8" href="#" variant="muted">
-          razor
-        </Tag>
+        {tags.map(tag => (
+          <Tag key={tag.children} className="mr8" {...tag} />
+        ))}
       </View>
       <View as="p" className="grid gsx gs4">
         <Button variant="primary" size="sm" className="grid--cell">
