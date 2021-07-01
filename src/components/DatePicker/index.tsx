@@ -1,5 +1,4 @@
 import React, { ReactElement, ReactNode } from 'react';
-// @ts-ignore
 import Icons from '@stackoverflow/stacks-icons';
 import { getDateInfo, isDateSelected } from 'src/utils';
 import Button from '../Button';

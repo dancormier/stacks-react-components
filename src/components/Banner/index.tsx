@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-// @ts-ignore
 import Icons from '@stackoverflow/stacks-icons';
 import Button from '../Button';
 import Icon from '../Icon';
