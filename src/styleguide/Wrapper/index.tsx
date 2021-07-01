@@ -17,7 +17,10 @@ const Wrapper = ({ children }: { children: ReactNode }): ReactElement => {
   return (
     <>
       {children}
-      <View className="mt24">
+      <View className=" bt bc-black-075 mt12 pt12">
+        <Button modifier="filled" onClick={() => setShowHTML(!showHTML)}>
+          {showHTML ? 'Hide' : 'Show'} HTML
+        </Button>
         {showHTML ? (
           <>
             <SyntaxHighlighter
@@ -29,11 +32,7 @@ const Wrapper = ({ children }: { children: ReactNode }): ReactElement => {
               {formatHTML(ReactToHTML(children), ' '.repeat(4), 120)}
             </SyntaxHighlighter>
           </>
-        ) : (
-          <Button variant="link" onClick={() => setShowHTML(!showHTML)}>
-            Show HTML
-          </Button>
-        )}
+        ) : null}
       </View>
     </>
   );
