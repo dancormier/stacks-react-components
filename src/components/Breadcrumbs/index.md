@@ -17,12 +17,11 @@ It is not appropriate to use Breadcrumbs when:
 
 ```jsx padded
 import { Breadcrumb, BreadcrumbLink, Icon } from '../index';
-import Icons from '@stackoverflow/stacks-icons';
 
 <Breadcrumbs>
   <Breadcrumb hasDivider>
     <BreadcrumbLink href="#" aria-label="Stack Overflow">
-      <Icon>{Icons.LogoGlyphXxs}</Icon>
+      <Icon name="LogoGlyphXxs" />
     </BreadcrumbLink>
   </Breadcrumb>
   <Breadcrumb hasDivider>
@@ -38,12 +37,11 @@ import Icons from '@stackoverflow/stacks-icons';
 
 ```jsx padded
 import { Breadcrumb, BreadcrumbLink, Icon } from '../index';
-import Icons from '@stackoverflow/stacks-icons';
 
 <Breadcrumbs>
   <Breadcrumb>
     <BreadcrumbLink href="#" aria-label="Stack Exchange">
-      <Icon>{Icons.LogoSEXxs}</Icon>
+      <Icon name="LogoSEXxs" />
     </BreadcrumbLink>
   </Breadcrumb>
   <Breadcrumb showDivider={false}>
@@ -56,7 +54,6 @@ import Icons from '@stackoverflow/stacks-icons';
 
 ```jsx padded
 import { Avatar, Breadcrumb, BreadcrumbLink } from '../index';
-import Icons from '@stackoverflow/stacks-icons';
 
 <Breadcrumbs>
   <Breadcrumb>

@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import Icons from '@stackoverflow/stacks-icons';
 import Icon from '../Icon';
 import View, { ViewProps } from '../View';
 
@@ -50,8 +49,12 @@ const Tag: React.FC = ({
     ) : null}
     {children}
     {dismissable ? (
-      <Icon className="s-tag--dismiss">{Icons.ClearSm}</Icon>
-    ) : null}
+      <View as="span" className="s-tag--dismiss">
+        <Icon name="ClearSm" />
+      </View>
+    ) : (
+      ''
+    )}
   </View>
 );
 

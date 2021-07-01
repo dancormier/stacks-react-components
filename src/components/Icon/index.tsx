@@ -1,7 +1,10 @@
 import React, { ReactElement } from 'react';
-import View, { ViewProps } from '../View';
+import parse, { domToReact } from 'html-react-parser';
+import Icons from '@stackoverflow/stacks-icons';
 
-export type IconProps = ViewProps & {
+export type IconProps = {
+  /** Name of icon (must match case) */
+  name: string;
   /** Use native (colorful) icon */
   native?: boolean;
 };
@@ -9,23 +12,20 @@ export type IconProps = ViewProps & {
 /**
  * Stacks provides a complete icon set, managed separately in the [Stacks-Icons](https://github.com/StackExchange/Stacks-Icons) repository. There you’ll find deeper documentation on the various uses as well as the icons’ source in our design tool Figma.
  */
-const Icon = ({
-  as = 'span',
-  children,
-  native,
-  ...rest
-}: IconProps): ReactElement => {
-  const [icon, setIcon] = React.useState(children);
-
-  React.useEffect(() => {
-    if (native) {
-      // @ts-ignore
-      setIcon(children.replaceAll('svg-icon ', 'svg-icon native '));
-    }
-  }, [children, native]);
-
+const Icon = ({ name = 'LogoGlyphSm', native }: IconProps): ReactElement => {
   // @ts-ignore
-  return <View as={as} dangerouslySetInnerHTML={{ __html: icon }} {...rest} />;
+  return parse(Icons[name], {
+    replace: ({ attribs, children }: any): any => {
+      return React.createElement(
+        'svg',
+        {
+          ...attribs,
+          className: `${attribs.class}${native ? ' native' : ''}`,
+        },
+        domToReact(children, {}),
+      );
+    },
+  });
 };
 
 export default Icon;

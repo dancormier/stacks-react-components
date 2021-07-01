@@ -1,6 +1,5 @@
 // @ts-nocheck
 import React from 'react';
-import Icons from '@stackoverflow/stacks-icons';
 import { Icon, Link, Navigation, View } from 'src/components/index';
 
 const StyleGuideRenderer = ({
@@ -21,9 +20,9 @@ const StyleGuideRenderer = ({
   <View className="root theme-system">
     <View as="header" className="bg-black-050 bb bc-black-3 h64">
       <View as="h1" className="ai-center d-flex fs-title fw-normal px24 py12">
-        <Icon native className="mr16">
-          {Icons.LogoGlyphMd}
-        </Icon>
+        <View as="span" className="mr16">
+          <Icon name="LogoGlyphMd" native />
+        </View>
         <Link href="/" variant="grayscale">
           {title}
         </Link>

@@ -37,7 +37,6 @@ import {
   Tag,
   View,
 } from './index';
-import Icons from '@stackoverflow/stacks-icons';
 
 const navItems = ['Home', 'Email', 'Content', 'Brand', 'Marketing'];
 const tags = [

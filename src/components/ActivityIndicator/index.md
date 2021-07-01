@@ -4,7 +4,6 @@ By default, our indicator has no positioning attached to it. Depending on your c
 
 ```jsx padded
 import { Avatar, Icon } from '../index';
-import Icons from '@stackoverflow/stacks-icons';
 
 <>
   <ActivityIndicator />
@@ -16,8 +15,8 @@ import Icons from '@stackoverflow/stacks-icons';
       <span className="pl4">Grayson</span>
     </a>
   </div>
-  <div className="mt16 fc-medium ps-relative d-inline-block">
-    <Icon className="fc-black-500">{Icons.Bell}</Icon>
+  <div className="mt16 fc-medium fc-black-500 ps-relative d-inline-block">
+    <Icon name="Bell" />
     <ActivityIndicator className="ps-absolute tn4 rn4" />
   </div>
 </>;

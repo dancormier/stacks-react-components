@@ -8,20 +8,19 @@ If you’re in Stack Overflow’s production environment, we have a helper that 
 
 ```jsx padded
 import { View } from '../index';
-import Icons from '@stackoverflow/stacks-icons';
 
 <View className="d-flex flex__fl-equal">
   <View className="flex--item">
     <div className="fc-medium mb12">Default</div>
-    <Icon>{Icons.Logo}</Icon>
+    <Icon name="Logo" />
   </View>
   <View className="flex--item">
     <div className="fc-medium mb12">With native colors</div>
-    <Icon native>{Icons.Logo}</Icon>
+    <Icon name="Logo" native />
   </View>
   <View className="flex--item">
     <div className="fc-medium mb12">With arbitrary classes</div>
-    <Icon>{Icons.Logo}</Icon>
+    <Icon name="Logo" />
   </View>
 </View>;
 ```

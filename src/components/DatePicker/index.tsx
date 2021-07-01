@@ -1,5 +1,4 @@
 import React, { ReactElement, ReactNode } from 'react';
-import Icons from '@stackoverflow/stacks-icons';
 import { getDateInfo, isDateSelected } from 'src/utils';
 import Button from '../Button';
 import Icon from '../Icon';
@@ -63,14 +62,14 @@ const Calendar = ({
           onClick={() => onChangeMonth(-1)}
           type="button"
         >
-          <Icon>{Icons.ArrowLeftSm}</Icon>
+          <Icon name="ArrowLeftSm" />
         </Button>
         <View as="h4" className="fs-body1 fw-normal my0 mx8">
           {visibleMonth.date.format('MMMM YYYY')}
         </View>
         {/* @ts-ignore */}
         <Button size="sm" onClick={() => onChangeMonth(1)} type="button">
-          <Icon>{Icons.ArrowRightSm}</Icon>
+          <Icon name="ArrowRightSm" />
         </Button>
       </View>
       <View>

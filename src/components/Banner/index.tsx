@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import Icons from '@stackoverflow/stacks-icons';
 import Button from '../Button';
 import Icon from '../Icon';
 import View, { ViewProps } from '../View';
@@ -40,7 +39,7 @@ const Banner = ({
     >
       <View className="grid gs8 gsx mx0" aria-label="notice-message">
         <View className="grid--cell">
-          <Icon aria-hidden="true">{Icons.Lock}</Icon>
+          <Icon name="Lock" aria-hidden="true" />
         </View>
         <View className="grid ai-center">{children}</View>
       </View>
@@ -52,7 +51,7 @@ const Banner = ({
           variant="link"
           aria-hidden="true"
         >
-          <Icon>{Icons.ClearSm}</Icon>
+          <Icon name="ClearSm" />
         </Button>
       </View>
     </View>
