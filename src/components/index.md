@@ -52,7 +52,7 @@ const tags = [
   {
     href: '#',
     variant: 'required',
-    hasDismiss: true,
+    dismissable: true,
     children: 'feature-request',
   },
   {
