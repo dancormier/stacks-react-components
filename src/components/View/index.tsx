@@ -5,7 +5,7 @@ export type ViewProps = {
   as?: keyof JSX.IntrinsicElements;
   /** Child elements */
   children?: ReactNode;
-  /** Appended CSS classes */
+  /** Add a classname to the element */
   className?: string;
 };
 
