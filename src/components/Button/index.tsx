@@ -1,16 +1,27 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import View, { ViewProps } from '../View';
 
 export type ButtonProps = ViewProps & {
   badge?: number;
+  disabled?: boolean;
   // /** `true` adds a loading spinner */
-  hasDropdown?: boolean;
+  dropdown?: boolean;
   hasIcon?: boolean;
+  /** Provides a url for buttons being used as a link */
+  href?: string;
+  loading?: boolean;
   /** Type of badge which sets color scheme */
   modifier?: 'clear' | 'outlined' | 'filled';
-  /** Button size */
+  /** Handler to be called on blur */
+  onBlur?: React.FocusEventHandler<HTMLElement>;
+  /** Handler to be called on click. */
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void;
+  /** Handler to be called on focus */
+  onFocus?: React.FocusEventHandler<HTMLElement>;
   size?: 'xs' | 'sm' | 'md';
-  /** Type of badge which sets color scheme */
+  /** Pass type down to a button */
+  type?: React.ButtonHTMLAttributes<HTMLButtonElement>['type'];
+  /** The base styling to apply to the button */
   variant?:
     | 'primary'
     | 'secondary'
@@ -37,18 +48,19 @@ const ButtonBadge = ({ children }: ButtonBadgeProps) => (
  * Buttons are user interface elements which allows users to take actions throughout the project. It is important that they have ample click space and help communicate the importance of their actions.
  *
  */
-const Button = ({
+const Button: React.FC<ButtonProps> = ({
   as = 'button',
   children,
   className = '',
   badge,
   modifier,
-  hasDropdown,
+  dropdown,
   hasIcon,
+  loading,
   size,
   variant = 'secondary',
   ...rest
-}: ButtonProps): ReactElement => (
+}: ButtonProps) => (
   <View
     as={as}
     className={`
@@ -56,12 +68,11 @@ const Button = ({
       ${variant ? `s-btn__${variant}` : ''}
       ${modifier ? `s-btn__${modifier}` : ''}
       ${size ? `s-btn__${size}` : ''}
-      ${hasDropdown ? 's-btn__dropdown' : ''}
+      ${dropdown ? 's-btn__dropdown' : ''}
       ${hasIcon ? 's-btn__icon' : ''}
+      ${loading ? 'is-loading' : ''}
       ${className}
     `}
-    // @ts-ignore
-    type={as === 'button' ? 'button' : ''}
     {...rest}
   >
     {children}
