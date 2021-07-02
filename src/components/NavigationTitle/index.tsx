@@ -9,7 +9,7 @@ export type NavigationTitleProps = ViewProps & {
  * See [Navigation](#/Stacks/Navigation)
  */
 const NavigationTitle = ({
-  as = 'a',
+  as = 'div',
   children,
   className = '',
   ...rest
