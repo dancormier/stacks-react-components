@@ -5,6 +5,7 @@ import View, { ViewProps } from '../View';
 
 export type BannerProps = ViewProps & {
   important?: boolean;
+  pinned?: boolean;
   variant?: 'info' | 'success' | 'warning' | 'danger';
 };
 
@@ -16,6 +17,7 @@ const Banner = ({
   className = '',
   children,
   important,
+  pinned,
   variant,
   ...rest
 }: BannerProps): ReactElement => (
@@ -24,6 +26,7 @@ const Banner = ({
     className={`s-banner
       ${variant ? `s-banner__${variant}` : ''}
       ${important ? `s-banner__important` : ''}
+      ${pinned ? `is-pinned` : ''}
       ${className}
     `}
     // @ts-ignore
@@ -32,20 +35,16 @@ const Banner = ({
     {...rest}
   >
     <View
-      className="grid grid__center jc-space-between s-banner--container"
+      className="d-flex jc-space-between s-banner--container"
       // @ts-ignore
       role="alertdialog"
       aria-describedby="notice-message"
     >
-      <View className="grid gs8 gsx mx0" aria-label="notice-message">
-        <View className="grid--cell">
-          <Icon name="Lock" aria-hidden="true" />
-        </View>
-        <View className="grid ai-center">{children}</View>
-      </View>
-      <View className="grid--cell ml-auto myn8" aria-label="notice-dismiss">
+      <View className="flex--item">{children}</View>
+      <View className="flex-item" aria-label="notice-dismiss">
         <Button
-          className="p8 s-btn grid grid__center fc-dark js-notice-close"
+          as="a"
+          className={`p8 ${important ? `fc-white` : 'fc-dark'}`}
           // @ts-ignore
           role="status"
           variant="link"
