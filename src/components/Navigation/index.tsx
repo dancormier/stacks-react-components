@@ -26,9 +26,9 @@ const Navigation = ({
     className={`
       s-navigation
       ${variant ? `s-navigation__${variant}` : ''}
-      ${layout !== 'horizontal' ? `s-navigation____${layout}` : ''}
-      ${scrollable ? `s-navigation____${size}` : ''}
-      ${size !== 'default' ? `s-navigation____${size}` : ''}
+      ${layout !== 'horizontal' ? `s-navigation__${layout}` : ''}
+      ${scrollable ? `s-navigation__${scrollable}` : ''}
+      ${size !== 'default' ? `s-size__${size}` : ''}
       ${className}
     `}
     {...rest}
