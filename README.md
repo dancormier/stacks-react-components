@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Look at it
 
-[Stacks React Component docs on Netlify](https://60dbc33b0ad8dd171e1af7da--dreamy-fermi-2c3396.netlify.app/).
+[Stacks React Component docs on Netlify](https://dreamy-fermi-2c3396.netlify.app).
 
 ## Available Scripts
 
